@@ -103,7 +103,9 @@
 
 #define RVTEST_CODE_BEGIN                                               \
         .section .text.init;                                            \
-        .org 0xC0, 0x00;                                                \
+        .option push;                                                   \
+        .option norelax; /* keep the fixed addresses of the vectors */  \
+        .org 0x7C0, 0x00; /* .text.init starts at 0x100 -> 0x8C0 */     \
         .balign  64;                                                    \
         .weak stvec_handler;                                            \
         .weak mtvec_handler;                                            \
@@ -116,6 +118,23 @@ trap_vector:                                                            \
         beq a4, a5, _report;                                            \
         li a5, CAUSE_MACHINE_ECALL;                                     \
         beq a4, a5, _report;                                            \
+        /* lab 2 (variant 5): on "instruction address misaligned"   */ \
+        /* (mcause == 0) print the string "misalign" and a newline   */ \
+        /* to the simulation console (SCR1_SIM_PRINT_ADDR); only the */ \
+        /* scratch registers a4 and a5 are used                      */ \
+        csrr a4, mcause;                                                \
+        bnez a4, 2f;                                                    \
+        li a5, 0xF0000000;                                              \
+        li a4, 0x6d; sb a4, 0(a5); /* m */                              \
+        li a4, 0x69; sb a4, 0(a5); /* i */                              \
+        li a4, 0x73; sb a4, 0(a5); /* s */                              \
+        li a4, 0x61; sb a4, 0(a5); /* a */                              \
+        li a4, 0x6c; sb a4, 0(a5); /* l */                              \
+        li a4, 0x69; sb a4, 0(a5); /* i */                              \
+        li a4, 0x67; sb a4, 0(a5); /* g */                              \
+        li a4, 0x6e; sb a4, 0(a5); /* n */                              \
+        li a4, 0x0a; sb a4, 0(a5); /* newline */                        \
+2:                                                                      \
         /* if an mtvec_handler is defined, jump to it */                \
         la a4, mtvec_handler;                                           \
         beqz a4, 1f;                                                    \
@@ -131,7 +150,8 @@ other_exception:                                                        \
         li   a0, 0x1;                                                   \
 _report:                                                                \
         j sc_exit;                                                      \
-        .balign  64;                                                    \
+        .option pop;                                                    \
+        .org 0x9F00, 0x00; /* .text.init starts at 0x100 -> 0xA000 */   \
         .globl _start;                                                  \
 _start:                                                                 \
         RISCV_MULTICORE_DISABLE;                                        \
