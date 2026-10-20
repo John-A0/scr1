@@ -389,5 +389,12 @@ scr1_memory_tb_ahb #(
     .dmem_hresp             (dmem_hresp )
 );
 
+//-------------------------------------------------------------------------------
+// Lab 3 (variant 5): non-synthesizable monitor of the "xor" instruction
+//-------------------------------------------------------------------------------
+scr1_tb_log_cmd i_tb_log_cmd (
+    .clk    (clk)
+);
+
 endmodule : scr1_top_tb_ahb
 

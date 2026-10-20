@@ -1,0 +1,82 @@
+[cycle 48] Detect XOR command: pc=0x000002b0 rvc=0  x3 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 57] Detect XOR command: pc=0x000002cc rvc=0  x3 = x1 ^ x2  (0x0ff00ff0 ^ 0xf0f0f0f0 = 0xff00ff00)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 71] Detect XOR command: pc=0x000002ee rvc=0  x3 = x1 ^ x2  (0x00ff00ff ^ 0x0f0f0f0f = 0x0ff00ff0)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 82] Detect XOR command: pc=0x0000030a rvc=0  x3 = x1 ^ x2  (0xf00ff00f ^ 0xf0f0f0f0 = 0x00ff00ff)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 93] Detect XOR command: pc=0x0000032c rvc=0  x1 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 102] Detect XOR command: pc=0x0000034c rvc=0  x2 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 109] Detect XOR command: pc=0x00000364 rvc=0  x1 = x1 ^ x1  (0xff00ff00 ^ 0xff00ff00 = 0x00000000)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 122] Detect XOR command: pc=0x00000382 rvc=0  x3 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 138] Detect XOR command: pc=0x00000382 rvc=0  x3 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 152] Detect XOR command: pc=0x000003aa rvc=0  x3 = x1 ^ x2  (0x0ff00ff0 ^ 0xf0f0f0f0 = 0xff00ff00)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 165] Detect XOR command: pc=0x000003aa rvc=0  x3 = x1 ^ x2  (0x0ff00ff0 ^ 0xf0f0f0f0 = 0xff00ff00)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 186] Detect XOR command: pc=0x000003da rvc=0  x3 = x1 ^ x2  (0x00ff00ff ^ 0x0f0f0f0f = 0x0ff00ff0)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 204] Detect XOR command: pc=0x000003da rvc=0  x3 = x1 ^ x2  (0x00ff00ff ^ 0x0f0f0f0f = 0x0ff00ff0)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 224] Detect XOR command: pc=0x0000040a rvc=0  x3 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 239] Detect XOR command: pc=0x0000040a rvc=0  x3 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 254] Detect XOR command: pc=0x00000432 rvc=0  x3 = x1 ^ x2  (0x0ff00ff0 ^ 0xf0f0f0f0 = 0xff00ff00)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 265] Detect XOR command: pc=0x00000432 rvc=0  x3 = x1 ^ x2  (0x0ff00ff0 ^ 0xf0f0f0f0 = 0xff00ff00)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 285] Detect XOR command: pc=0x00000462 rvc=0  x3 = x1 ^ x2  (0x00ff00ff ^ 0x0f0f0f0f = 0x0ff00ff0)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 301] Detect XOR command: pc=0x00000462 rvc=0  x3 = x1 ^ x2  (0x00ff00ff ^ 0x0f0f0f0f = 0x0ff00ff0)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 318] Detect XOR command: pc=0x0000048e rvc=0  x3 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 331] Detect XOR command: pc=0x0000048e rvc=0  x3 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 347] Detect XOR command: pc=0x000004b8 rvc=0  x3 = x1 ^ x2  (0x0ff00ff0 ^ 0xf0f0f0f0 = 0xff00ff00)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 359] Detect XOR command: pc=0x000004b8 rvc=0  x3 = x1 ^ x2  (0x0ff00ff0 ^ 0xf0f0f0f0 = 0xff00ff00)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 374] Detect XOR command: pc=0x000004e8 rvc=0  x3 = x1 ^ x2  (0x00ff00ff ^ 0x0f0f0f0f = 0x0ff00ff0)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 386] Detect XOR command: pc=0x000004e8 rvc=0  x3 = x1 ^ x2  (0x00ff00ff ^ 0x0f0f0f0f = 0x0ff00ff0)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 403] Detect XOR command: pc=0x00000512 rvc=0  x3 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 418] Detect XOR command: pc=0x00000512 rvc=0  x3 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 433] Detect XOR command: pc=0x0000053a rvc=0  x3 = x1 ^ x2  (0x0ff00ff0 ^ 0xf0f0f0f0 = 0xff00ff00)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 444] Detect XOR command: pc=0x0000053a rvc=0  x3 = x1 ^ x2  (0x0ff00ff0 ^ 0xf0f0f0f0 = 0xff00ff00)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 464] Detect XOR command: pc=0x0000056a rvc=0  x3 = x1 ^ x2  (0x00ff00ff ^ 0x0f0f0f0f = 0x0ff00ff0)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 480] Detect XOR command: pc=0x0000056a rvc=0  x3 = x1 ^ x2  (0x00ff00ff ^ 0x0f0f0f0f = 0x0ff00ff0)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 497] Detect XOR command: pc=0x00000596 rvc=0  x3 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 510] Detect XOR command: pc=0x00000596 rvc=0  x3 = x1 ^ x2  (0xff00ff00 ^ 0x0f0f0f0f = 0xf00ff00f)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 526] Detect XOR command: pc=0x000005c0 rvc=0  x3 = x1 ^ x2  (0x0ff00ff0 ^ 0xf0f0f0f0 = 0xff00ff00)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 538] Detect XOR command: pc=0x000005c0 rvc=0  x3 = x1 ^ x2  (0x0ff00ff0 ^ 0xf0f0f0f0 = 0xff00ff00)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 553] Detect XOR command: pc=0x000005f0 rvc=0  x3 = x1 ^ x2  (0x00ff00ff ^ 0x0f0f0f0f = 0x0ff00ff0)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 565] Detect XOR command: pc=0x000005f0 rvc=0  x3 = x1 ^ x2  (0x00ff00ff ^ 0x0f0f0f0f = 0x0ff00ff0)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 575] Detect XOR command: pc=0x00000610 rvc=0  x2 = x0 ^ x1  (0x00000000 ^ 0xff00ff00 = 0xff00ff00)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 585] Detect XOR command: pc=0x0000062a rvc=0  x2 = x1 ^ x0  (0x00ff00ff ^ 0x00000000 = 0x00ff00ff)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 592] Detect XOR command: pc=0x0000063c rvc=0  x1 = x0 ^ x0  (0x00000000 ^ 0x00000000 = 0x00000000)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
+[cycle 600] Detect XOR command: pc=0x00000658 rvc=0  x0 = x1 ^ x2  (0x11111111 ^ 0x22222222 = 0x33333333)
+    state regs: mstatus{mie=0 mpie=1} mtvec=0x000001c0 mie{meie=0 mtie=0 msie=0} mip{meip=0 mtip=1 msip=0} mepc=0x000002a0 mcause{irq=0 code=0} mtval=0x00000000
