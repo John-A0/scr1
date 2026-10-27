@@ -1,6 +1,6 @@
 # Lab 2 — SCR1 simulation: exception handling, reset vector and trap vector
 
-**Author:** <FULL NAME>, group P4119  **Variant:** 5
+**Variant:** 5
 
 ## 1. Task (variant 5)
 
