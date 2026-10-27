@@ -1,3 +1,4 @@
+
 /*
 * Copyright by Syntacore LLC © 2016, 2017. See LICENSE for details
 * @file       <link.ld>
@@ -18,7 +19,7 @@ CL_SIZE = 32;
 SECTIONS {
 
   /* code segment */
-  .text.init 0 : { 
+  .text.init 0 : {
     FILL(0);
     . = 0x100 - 12;
     SIM_EXIT = .;
@@ -28,16 +29,21 @@ SECTIONS {
     LONG(-1);
     . = 0x100;
     PROVIDE(__TEXT_START__ = .);
-    *(.text.init) 
+
+    /* Lab 2: SCR1 vector address definitions */
+    PROVIDE(__SCR1_TRAP_VECTOR__ = __TEXT_START__ + 0x7C0);
+    PROVIDE(__SCR1_RESET_VECTOR__ = __TEXT_START__ + 0x9F00);
+
+    *(.text.init)
   } >RAM
 
-  .text  : {
+  .text : {
     *crt.o(.text .text.*)
     *(.text .text.*)
     *(sc_test_section)
     . = ALIGN(CL_SIZE);
-     PROVIDE(__TEXT_END__ = .);
-  } >RAM 
+    PROVIDE(__TEXT_END__ = .);
+  } >RAM
 
   /* data segment */
   .data : {
@@ -83,7 +89,7 @@ SECTIONS {
   _end = .;
   PROVIDE(__end = .);
 
-  /* End of uninitalized data segement */
+  /* End of uninitialized data segment */
 
   .stack ORIGIN(RAM) + LENGTH(RAM) - STACK_SIZE : {
     FILL(0);
@@ -97,3 +103,10 @@ SECTIONS {
     *(.eh_frame .eh_frame.*)
   }
 }
+
+/* Lab 2: verify expected SCR1 vector addresses */
+ASSERT(__SCR1_TRAP_VECTOR__ == 0x8C0,
+       "Lab 2: Trap Vector must be 0x8C0");
+
+ASSERT(__SCR1_RESET_VECTOR__ == 0xA000,
+       "Lab 2: Reset Vector must be 0xA000");
